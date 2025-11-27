@@ -2,8 +2,10 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",   // Busca en la carpeta app
-    "./components/**/*.{js,ts,jsx,tsx,mdx}", // Busca en components
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}", // Agregamos src por si acaso
   ],
   theme: {
     extend: {},

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import "./globals.css"; // <--- ESTA ES LA LÍNEA MÁGICA QUE FALTABA
+import "./globals.css";  // <--- ¡ESTA ES VITAL!
 
 export const metadata: Metadata = {
   title: "Pagos Familiares",
-  description: "Control de gastos Spotify y YouTube",
+  description: "Control de gastos",
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className="antialiased bg-gray-100">
+      <body>
         {children}
       </body>
     </html>

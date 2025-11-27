@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React, { useEffect, useState } from 'react';
@@ -92,7 +93,7 @@ export default function Home() {
             <span className="text-sm bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm">Día {cutoff}</span>
           </div>
         </div>
-        <div className="p-4 space-y-3 flex-grow bg-gray-50">
+        <div className="p-4 space-y-3 grow bg-gray-50">
           {list.map(member => {
             const status = getMemberStatus(member);
             return (

@@ -194,6 +194,7 @@ export default function Home() {
           animation: runAcrossScreen 3s linear infinite; z-index: 0; opacity: 0.8; pointer-events: none;
         }
       `}</style>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src="/flash.png" alt="Flash" className="flash-runner" />
 
       {/* --- HEADER --- */}
